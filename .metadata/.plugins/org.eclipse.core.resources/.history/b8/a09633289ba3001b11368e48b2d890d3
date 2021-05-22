@@ -1,0 +1,51 @@
+package ups.nj.listener;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class TestListener implements ITestListener{
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		System.out.println("I  am in onStart method  :"+ result.getName());	
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+	System.out.println("I am in onTestSuccess: " + result.getName());
+		
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		
+		System.out.println("I am in onTestFailure: " + result.getName());
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		System.out.println("I am in onTestSkipped: " + result.getName());
+		
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		
+		System.out.println("I am in onTestFailedButWithinSuccessPercentage: " + result.getName());
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		
+		System.out.println("I am in onStart: " + result.getName());
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+	
+		
+	}
+
+}

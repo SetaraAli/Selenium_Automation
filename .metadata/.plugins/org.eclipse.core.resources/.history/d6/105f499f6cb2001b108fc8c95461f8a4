@@ -1,0 +1,10 @@
+package browser_test;
+
+public class LoginZooplaPage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

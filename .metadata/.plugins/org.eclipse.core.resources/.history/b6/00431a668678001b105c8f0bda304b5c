@@ -1,0 +1,11 @@
+package com.nyc.inheritance;
+
+public interface EmployeeName {
+	
+abstract void getfirstname();
+	
+	abstract void getlasrname(); 
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package com.usa.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		List<Integer> myage = new ArrayList<>();
+		myage.add(18);
+		myage.add(19);
+		myage.add(20);
+		myage.add(19);
+		myage.add(16);
+		myage.add(18);
+		System.out.println(myage);
+		System.out.println(myage.get(4));
+		System.out.println(myage.size());
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.usa.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		List<String> myage = new ArrayList<>();
+		myage.add("Setara");
+		myage.add("Ali");
+		myage.add("Suraia");
+		myage.add("Sumaia");
+		myage.add("Sumaia");
+		myage.add("Sumaia");
+		myage=(List<String>)myage.stream().distinct().collect(Collectors.toList());
+		System.out.println(myage);//print all value in one line.
+		System.out.println(myage.get(1));// searching value by index theory.
+		System.out.println(myage.size());// size method for get the total number.
+		for(int i= 0; i<myage.size(); i++) {
+			System.out.println(myage.get(i));
+		}
+		
+	}
+
+}

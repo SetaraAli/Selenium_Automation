@@ -1,0 +1,30 @@
+package com.javabasic;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ArrayListTesting {
+
+	public static void main(String[] args) {
+		List<String>  cars =new ArrayList<String>();
+		
+		cars.add("BMW");
+		//cars.add("Toyota");
+		cars.add("Ford");
+		cars.add("Honda");
+		cars.add("Honda");
+		cars.add("BMW");
+		cars.add("Toyota");
+		cars.add("Toyota");
+		cars.add("BMW");
+		//cars.add("null");
+		//cars.add("null");
+		cars.add("BMW");
+		cars.add("BMW");
+		System.out.println(cars);
+		System.out.println(Collections.max(cars));
+		System.out.println(Collections.min(cars));
+	}
+
+}

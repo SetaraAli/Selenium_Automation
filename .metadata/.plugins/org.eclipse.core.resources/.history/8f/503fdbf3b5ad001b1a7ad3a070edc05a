@@ -1,0 +1,17 @@
+package com.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PracticeList {
+	public static void main(String[] args) {
+		//String [] name = {"java", "ruby", "java"};
+		List<Integer> list =new ArrayList<>();
+		list.add(100);
+		list.add(200);
+		list.add(500);
+		list.add(300);
+		System.out.println(list);
+	}
+
+}

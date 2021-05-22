@@ -1,0 +1,9 @@
+package com.nyc.inheritance;
+
+public class Dad{
+	
+	public void getproperty() {
+		System.out.println("My Dad has a big house");
+	}
+
+}

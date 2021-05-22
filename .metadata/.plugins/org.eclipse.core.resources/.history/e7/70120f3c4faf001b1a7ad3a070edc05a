@@ -1,0 +1,14 @@
+package com.usa.collection;
+
+import java.util.Arrays;
+
+public class SecondHighest {
+	
+	public static void main(String[] args) {
+		int [] age = {100,200,500,300};	
+		System.out.println(Arrays.toString(age));
+		System.out.println(age.length);
+		System.out.println(age[1]);
+	}
+
+}

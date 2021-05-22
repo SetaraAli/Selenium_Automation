@@ -1,0 +1,17 @@
+package com.javabasic;
+
+public class IfElseLoop {
+
+	public static void main(String[] args) {
+		int a =40;
+		int b =60;//If condition is true state will be print
+		if(a<b) {
+			System.out.println("I will run the code and it is true");
+
+		}
+		else {
+			System.out.println("I will not able to run the code and it is false");
+		}
+	}
+
+}

@@ -1,0 +1,119 @@
+package com.usa.collection;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class IntCoding {
+	public static void findDuplicate() {
+		int[] array = {1,2,3,4,5,5};
+		Set<Integer> set = new HashSet<>();
+		for(int duplicate:array) {
+		if(set.add(duplicate)==false) {
+			System.out.println(duplicate);
+		}
+		}
+	}
+	public static void removeDuplicate() {
+		List<Integer> list = new ArrayList<>();
+		list.add(100);
+		list.add(200);
+		list.add(300);
+		list.add(200);
+		 list= (List<Integer>)list.stream().distinct().collect(Collectors.toList());
+		 System.out.println(list);
+		int max= Collections.max(list);
+		System.out.println(max);
+		int min = Collections.min(list);
+		System.out.println(min);
+		Collections.reverse(list);
+		System.out.println(list);
+	}
+	public static void reverseString() {
+		String name = new String("Setara");
+		String reverse =new StringBuffer(name).reverse().toString();
+		System.out.println(reverse);
+	}
+	public static void SpilitString() {
+	String country = new String	("United States Of America");
+	for(String split:country.split(" ")) {
+		System.out.println(split);
+	}
+		
+	}
+	public static void OdddEven() {
+		
+		int num = 30;
+		if(num%2==0) {
+			System.out.println("yes, it is an even number: "+ num);
+		}
+		else {
+			System.out.println("no, it is an odd number: "+ num);
+			
+		}
+	}
+	public static void findMissingNum() {
+		int[] array = {1,2,4,6};
+		Arrays.sort(array);
+		for(int i=0; i<array.length-1;i++) {
+			if(array[i]+1 !=array[i+1]) {
+			System.out.println(array[i]+1);	
+			//break;
+			}
+		}
+	}
+	public static void palendromNum() {
+		String palendrom = "MOM";
+		String reverse = new StringBuffer(palendrom).reverse().toString();
+		if(palendrom.equals(reverse)) {
+			System.out.println("yes, it is a palendrom : "+ palendrom);
+		}
+		else {
+			System.out.println("no, it is not a palendrom : "+ palendrom);
+		}
+	}
+	public static void findPrimenum() {
+		int limit=30;
+		System.out.println("prime number between 1 and: " +limit);
+		for(int i=1; i<30;i++) {
+			boolean prime=true;
+			for(int j=2; j<i;j++) {
+			if(i%j==0){
+				prime=false;
+				break;
+			}
+			}
+			if(prime) {
+				System.out.println(i+" ");
+				
+				
+			}
+		}
+		
+	}
+	public static void specialCharectar() {
+		String value = "Setare,Ali";
+		value=value.replaceAll("[^a-zA-Z0-9]", " ");
+		System.out.println(value);
+		String num = "45.5";
+		num=num.replaceAll("[\\W]", " ");
+		System.out.println(num);
+	}
+	
+	public static void main(String[] args) {
+		/*findDuplicate();
+		removeDuplicate();
+		reverseString();
+		SpilitString();
+		OdddEven();*/
+		findMissingNum();
+		palendromNum();
+		findPrimenum();
+		specialCharectar();
+	}
+
+}

@@ -1,0 +1,17 @@
+package ali20;
+
+public class Practice_Method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+byte aa = 'c';
+	short bb=123;
+	long cc = 12;
+	int dd = 4;
+	boolean bol = true;
+	boolean bol1 = false;
+	char fff = 12;
+	System.out.println(cc+dd);
+	}
+
+}

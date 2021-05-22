@@ -1,0 +1,16 @@
+package com.usa.collection;
+
+import java.util.Arrays;
+
+public class SecondHighest {
+	
+	public static void main(String[] args) {
+		int [] age = {100,200,500,300};
+		Arrays.sort(age);
+		System.out.println(Arrays.toString(age));
+		int size=age.length;
+		int Hnum=age[size-2];
+		System.out.println(Hnum);
+	}
+
+}

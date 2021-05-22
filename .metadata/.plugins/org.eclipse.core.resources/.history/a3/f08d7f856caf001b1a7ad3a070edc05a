@@ -1,0 +1,19 @@
+package com.usa.collection;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class FindDuplicate {
+	
+	public static void main(String[] args) {
+	int [] age = {40,50,47,50};
+	Set<Integer> set = new HashSet<>();
+	for(int duplicate:age) {
+		if(set.add(duplicate)==false) {
+			System.out.println(duplicate);
+		}
+		
+	}
+	}
+
+}

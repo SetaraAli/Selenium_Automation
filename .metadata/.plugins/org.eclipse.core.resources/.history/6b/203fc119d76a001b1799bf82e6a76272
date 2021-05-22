@@ -1,0 +1,12 @@
+package com.javabasic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CheckList {
+	
+	//List<Integer> mylist= new ArrayList<>();
+	
+ArrayList<Integer> mylist=new ArrayList<>();
+         
+}

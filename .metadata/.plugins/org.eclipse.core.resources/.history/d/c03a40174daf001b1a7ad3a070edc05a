@@ -1,0 +1,11 @@
+package com.usa.collection;
+
+public class SecondHighest {
+	
+	public static void main(String[] args) {
+		int [] age = {100,200,500,300};	
+		int size=age.length;
+		System.out.println(size);
+	}
+
+}

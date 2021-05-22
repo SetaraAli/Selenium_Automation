@@ -1,0 +1,15 @@
+package com.usa.collection;
+
+public class FindPalendrumNumber {
+	public static void main(String[] args) {
+		//palendrome means back and forth
+		String palendrome ="level";
+		String reverse = new StringBuffer(palendrome).reverse().toString();
+		if (palendrome.equals(reverse)){
+		System.out.println("yes, it is a palendrum");
+		}
+		else { System.out.println("no, it is not palendrum");
+	}
+
+}
+}

@@ -1,0 +1,18 @@
+package overloading;
+
+import org.openqa.selenium.WebDriver;
+
+public class OpenBrowser {
+	public WebDriver driver;
+public void getbrowser() {
+	
+	System.setProperty("WebDriver.chrome.driver", "/.Driver.chromedriver.exe");
+	
+}
+public static void main(String[] args) {
+	OpenBrowser obj = new OpenBrowser();
+	obj.getbrowser();
+	System.out.println(obj);
+}
+
+}

@@ -1,0 +1,19 @@
+package com.interview.nyc;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CodingPractice {
+	public static void findDuplicate() {
+		int[] array = {1,2,3,3,4};
+		Set<Integer> set= new HashSet<>();
+		for(int duplicate:array) {
+			if(set.add(duplicate)==false) {
+				System.out.println(duplicate);
+			}
+		}
+	}
+public static void main(String[] args) {
+	findDuplicate();
+}
+}

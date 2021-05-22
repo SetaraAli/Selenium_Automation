@@ -1,0 +1,23 @@
+package com.javabasic;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ArrayListCount {
+
+	public static void main(String[] args) {
+		List <Integer> age = new ArrayList<Integer>();
+         age.add(null);
+         age.add(18);
+         age.add(20);
+         age.add(21);
+         age.add(19);
+         age.add(22);
+         age.add(null);
+         System.out.println(age);
+         System.out.println(Collections.max(age));
+         System.out.println(Collections.min(age));
+	}
+
+}

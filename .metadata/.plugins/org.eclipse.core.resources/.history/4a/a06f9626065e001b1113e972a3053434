@@ -1,0 +1,16 @@
+package java_PolymorphismClass;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Country obj = new Country();
+		obj.getAddress();
+		Country stt = new State();
+		 stt = new State();
+		obj.getAddress();
+		
+		obj = new City();
+		obj.getAddress();
+	}
+}

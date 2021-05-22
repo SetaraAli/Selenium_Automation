@@ -1,0 +1,25 @@
+package com.nyc.inheritance;
+
+public class Child extends Parents{
+	
+	public void getmoney() {
+		//getmoney override method
+		super.getmoney();
+		System.out.println("I have money");
+	}
+	// overriding means same method same parameter override in another class for initiate new value and
+	//inheritance is sub class call the super class to get the common property or value from super class
+	
+	public void getcar() {
+		
+		System.out.println("I have a car");
+		//super.getmoney();
+	}
+public static void main(String[] args) {
+	Child obj = new Child();
+	obj.getcar();
+	//obj.getproperty();
+	obj.getmoney();
+}	
+
+}

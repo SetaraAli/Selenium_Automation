@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class InterviewCoding {
+	//find duplicate
+	public static void findDuplicate() {
+		int [] array = {1,2,3,4,5,6,7,8,8,9,9};
+		Set<Integer> set = new HashSet<>();
+		for(int duplicate:array) {
+			if(set.add(duplicate)==false) {
+				System.out.println(duplicate);
+			}
+			
+		}
+	}
+	
+	public static void removeDuplicate() {
+		//remove duplicate
+	List<Integer> list = new ArrayList<>();
+	list.add(100);
+	list.add(200);
+	list.add(300);
+	list.add(400);
+	list.add(300);
+	list=(List<Integer> )list.stream().distinct().collect(Collectors.toList());
+	System.out.println(list);
+	}
+	public static void oddEven() {
+		//Find odd & even no.
+		int num = 35;
+		if(num%2==0) {
+			System.out.println("yes, it is an even no: " + num);
+		}
+		
+		else {
+			System.out.println("no, it is an even no: " + num);
+		}
+	}
+	
+	public static void highestnum() {
+		int[] number = {20,60,30,40,50,70};
+		Arrays.sort(number);
+		System.out.println(Arrays.toString(number));
+	int	Length=number.length;
+		int hnum = number[Length-2];
+		System.out.println(hnum);
+	}
+	
+	public static void main(String[] args) {
+		findDuplicate();
+		removeDuplicate();
+		oddEven();
+		highestnum();
+	}
+
+}

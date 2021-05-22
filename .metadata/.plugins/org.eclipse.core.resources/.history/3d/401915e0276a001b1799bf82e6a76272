@@ -1,0 +1,20 @@
+package com.javabasic;
+
+import java.util.Arrays;
+
+public class ArrayLoopCalculation {
+	
+	public static void main(String[] args) {
+		int[]a= {12,13,14,15,};
+		int[]b= {10,16,19,25,};
+		int[]c= new int[a.length+b.length];
+		System.arraycopy(arg0, arg1, arg2, arg3, arg4);
+		//System.arraycopy(a, 0, c, 0, a.length);//src,srcpos,dest,srcdest,length;
+		System.arraycopy(b, 0, c, a.length,b.length);
+		
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(c));
+	}
+
+}

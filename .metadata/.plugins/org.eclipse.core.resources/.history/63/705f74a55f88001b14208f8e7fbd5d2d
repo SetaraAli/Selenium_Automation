@@ -1,0 +1,55 @@
+package com.collection;
+
+import java.nio.file.FileSystemLoopException;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class CountArray {
+	public static void main(String[] args) {
+		
+	
+	String [] name = {"Ruhul","Liton", "Alam","Alam",""};
+	Set <String> duplicate = new HashSet<>();
+	System.out.println(Arrays.toString(name));
+	System.out.println(name[1]);
+	for(String obj:name) {
+		if(duplicate.add(obj)== false) {
+			System.out.println("Duplicate value is: " + obj);
+		}
+		
+		
+	}
+	int [] age = {10,15,20,28,21};
+	int size= age.length;
+	Arrays.sort(age);
+	System.out.println(Arrays.toString(age));
+	int number=age[size-2];// it's go by descending order
+	System.out.println("Get the second heighest age: " + number);
+	
+String[] array = {"Setara","Ali","Samian","Ali"};
+Set<String> obj = new HashSet<>();
+for(String Duplicate:array) {
+	if(obj.add(Duplicate)==false) {
+		System.out.println("Find the duplicate: "+Duplicate);
+	}
+}
+		
+int[] num = {15,19,23,30,25};
+	int children = num.length;
+	Arrays.sort(num);
+	System.out.println(Arrays.toString(num));
+	int Age = num[children-2];
+	System.out.println("Find the second highest age: "+ Age);
+	
+	int []son = {27,25,29};
+	System.out.println(Arrays.toString(son).length());
+	
+	}
+
+	
+
+	
+	}	
+	
+

@@ -1,0 +1,18 @@
+package com.nyc.inheritance;
+
+public class Daughter extends Mom {
+
+	public void getknowlege() {
+		super.getjewelery();
+		
+		System.out.println("I have knowledge");
+		//getproperty();
+		//getjewelery();
+	}
+	public static void main(String[] args) {
+		Daughter obj = new Daughter();
+		//obj.getproperty();
+		//getjewelery();
+		obj.getknowlege();
+	}
+}

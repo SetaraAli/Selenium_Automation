@@ -1,0 +1,9 @@
+package com.nyc.inheritance;
+
+public class Mom extends Dad {
+	public void getjewelery() {
+		 super.getproperty();
+		System.out.println("My Mom has jewelery");
+	}
+
+}

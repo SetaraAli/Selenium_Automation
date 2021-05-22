@@ -1,0 +1,19 @@
+package com.usa.collection;
+
+public class ReverseSplitString {
+	public static void main(String[] args) {
+		//How to reverse String
+		String obj= new String("jacksonHeights");
+		String reverse= new StringBuffer(obj).reverse().toString();
+		System.out.println(reverse);
+		//How to split String
+		String country =new String("United States Of America");
+		for(String spl:country.split("")) {
+			System.out.println(spl);
+		}
+		
+	}
+	
+	
+
+}

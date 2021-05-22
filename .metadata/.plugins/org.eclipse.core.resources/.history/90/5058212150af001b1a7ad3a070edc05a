@@ -1,0 +1,21 @@
+package com.usa.collection;
+
+import java.util.Arrays;
+
+public class SecondHighest {
+	
+	public static void main(String[] args) {
+		int [] age = {100,200,500,300};	
+		//how to find array string
+		System.out.println(Arrays.toString(age));
+		//how to find array length
+		System.out.println(age.length);
+		//how to find specefic no from array
+		System.out.println(age[1]);
+		//how to sort the no.
+		int size=age.length;
+		Arrays.sort(age);
+		System.out.println(age);
+	}
+
+}

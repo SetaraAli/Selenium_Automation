@@ -1,0 +1,29 @@
+package com.interview.nyc;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+
+public class WindowHandle {
+	// How to handle the multiple windows?
+	public static void getWindowHandles() {
+		  WebDriver driver = null;
+		String mainWindowHandle = driver.getWindowHandle();
+	        Set<String> allWindowHandles = driver.getWindowHandles();
+	        Iterator<String> iterator = allWindowHandles.iterator(); 
+	        // Here we will check if child window has other child windows and will fetch the heading of the child window
+	        while (iterator.hasNext()) {
+	            String ChildWindow = iterator.next();
+	                if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
+	                    driver.switchTo().window(ChildWindow);
+	                    driver.close();
+	                    System.out.println("Child window closed");
+	                 }	      
+	        }        
+	        //  Switch back to the main window which is the parent window.
+	        driver.switchTo().window(mainWindowHandle);
+	      
+	}
+
+}

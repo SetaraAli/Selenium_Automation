@@ -1,0 +1,9 @@
+package com.nyc.inheritance;
+
+public class Parents {
+	
+	public void getmoney() {
+		
+		System.out.println("My parents has money");
+	}
+}

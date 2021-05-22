@@ -1,0 +1,28 @@
+package com.nyc.inheritance;
+
+public class EmployeeFile implements Employeeage, EmployeeName {
+	
+    String fname = "Shaikh";
+    String lname = "Ali";
+    int age = 29;
+
+	@Override
+	public void getage() {	
+	System.out.println("Employee age:" + age);
+	}
+	@Override
+	public void getfirstname() {
+		System.out.println("Employee firstname:" + fname);	
+	}
+	@Override
+	public void getlasrname() {
+		System.out.println("Employee lastname:" + lname);
+		}
+public static void main(String[] args) {
+	EmployeeFile obj = new EmployeeFile();
+	obj.getfirstname();
+	obj.getlasrname();
+	obj.getage();
+	
+}
+}

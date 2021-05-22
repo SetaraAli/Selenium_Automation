@@ -1,0 +1,17 @@
+package com.interview.nyc;
+
+import java.util.Arrays;
+
+public class JavaCodingReview {
+	public static void findduplicate() {
+	
+		int[] array = {1,2,3,4,5,4};
+		Arrays.sort(array);
+		System.out.println(Arrays.toString(array));
+		
+	}
+	public static void main(String[] args) {
+		findduplicate();	
+	}
+	
+}

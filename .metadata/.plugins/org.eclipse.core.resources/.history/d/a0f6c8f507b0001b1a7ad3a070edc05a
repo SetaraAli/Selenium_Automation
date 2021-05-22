@@ -1,0 +1,31 @@
+package com.usa.collection;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class RemoveDuplicate {
+	public static void main(String[] args) {
+		//How to remove duplicate in automation.
+	List<Integer> age =new ArrayList<>();
+	age.add(100);
+	age.add(200);
+	age.add(400);
+	age.add(100);
+	System.out.println(age);
+	age=(List<Integer>)age.stream().distinct().collect(Collectors.toList());
+	System.out.println(age);
+	//How to find maximum no.
+	int max=Collections.max(age);
+	System.out.println(max);
+	//how to find my minimum no.
+	int min=Collections.min(age);
+			System.out.println(min);
+			//How to reverse the list
+	Collections.reverse(age);
+	System.out.println(age);
+	
+
+	}
+}
